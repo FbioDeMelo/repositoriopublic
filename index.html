@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Fábio - Desenvolvedor Web especializado em PHP, HTML, CSS, JavaScript e soluções inovadoras.">
+    <meta property="og:title" content="Portfólio de Fábio">
+    <meta property="og:description" content="Portfólio de Fábio - Desenvolvedor Web especializado em PHP, HTML, CSS, JavaScript e soluções inovadoras.">
+    <meta property="og:image" content="image.webp">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfólio</title>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="circuit-svgrepo-com.svg" alt="logo">
+        </div>
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="container" id="sobre">
+        <h2>Sobre Mim</h2>
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEjENuROGMN6w/profile-displayphoto-shrink_800_800/B4DZOXVmO8HUAc-/0/1733410842400?e=1743638400&v=beta&t=NaGf-e_3IjVhQtukXbxKYDxTH-qJUE0ijQrdQQQEPB8" alt="Foto de Perfil" class="perfil-img">
+        <p>Olá! Meu nome é Fábio e sou desenvolvedor web apaixonado por criar soluções inovadoras e funcionais. Com experiência em PHP, HTML, CSS e JavaScript, trabalho com foco na construção de interfaces modernas e responsivas, garantindo que a experiência do usuário seja sempre a melhor possível.</p>
+        <p>Minha jornada no desenvolvimento web começou com um simples interesse por como as páginas da internet são construídas. Desde então, venho aprimorando minhas habilidades e trabalhando em diversos projetos que exigem não apenas conhecimentos técnicos, mas também criatividade e atenção aos detalhes. Acredito que a tecnologia tem o poder de transformar a vida das pessoas, e me empenho em usar minhas habilidades para criar soluções que realmente façam a diferença.</p>
+        <p>Se você precisa de alguém para transformar ideias em produtos web funcionais e bonitos, estou aqui para ajudar!</p>
+    </section>
+    <section class="carrossel-container" id="projetos">
+        <h2>Projetos</h2>
+        <button class="carrossel-btn prev" onclick="mudarSlide(-1)">&#10094;</button>
+        <div class="carrossel" id="carrossel">
+            <div class="carrossel-slide">
+                <h3>Sistema de Chamados</h3>
+                <img src="image.png" alt="Sistema de Chamados" class="carrossel-img">
+                <p>Um sistema de criação de Chamados feito com <strong>PHP, HTML, JavaScript e CSS</strong></p>
+            </div>
+            <div class="carrossel-slide">
+                <h3>Tucano Play</h3>
+                <img src="" alt="Projeto 2" class="carrossel-img">
+                <p>Projeto em andamento...</p>
+            </div>
+            <div class="carrossel-slide">
+                <h3>Jm Clínica</h3>
+                <img src="imagens/projeto3.jpg" alt="Projeto 3" class="carrossel-img">
+                <p>Sistema de Gereciamento de Clínica Odontôlogica usando<strong>PHP, HTML, JavaScript e CSS</strong></p>
+            </div>
+        </div>
+        <button class="carrossel-btn next" onclick="mudarSlide(1)">&#10095;</button>
+    </section>
+    <section class="skills" id="skills">
+    <h2>Minhas Habilidades</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <h3>Desenvolvimento Web</h3>
+            <ul>
+                <li><img src="html5-01-svgrepo-com.svg" alt="HTML" class="skill-icon">HTML</li>
+                <li><img src="css3-01-svgrepo-com.svg" alt="CSS" class="skill-icon">CSS</li>
+                <li><img src="javascript-1-svgrepo-com.svg" alt="JavaScript" class="skill-icon">JavaScript</li>
+                <li><img src="php01-svgrepo-com.svg" alt="PHP" class="skill-icon"> PHP</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h3>Banco de Dados</h3>
+            <ul>
+                <li><img src="mysql-svgrepo-com.svg" alt="MySQL" class="skill-icon"> MySQL</li>
+            </ul>
+        </div>
+        <div class="skill-card">
+            <h3>Outras Habilidades</h3>
+            <ul>
+                <li><img src="java-svgrepo-com.svg" alt="Java" class="skill-icon"> Java</li>
+                <li><img src="c-plus-plus-svgrepo-com.svg" alt="C++" class="skill-icon"> C++</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="container" id="contato">
+    <h2>Contato</h2>
+    <p>fabiodemelo123s@outlook.com</p>
+    <p>Telefone: +55 (31) 983471851</p>
+    <p>Ou envie sua solicitação diretamente pelo <strong>WhatsApp</strong> clicando no link abaixo:</p>    
+    <div>
+        <a href="https://wa.me/5531983471851?text=Olá,%20quero%20entrar%20em%20contato!" target="_blank">
+            <button type="button">Enviar mensagem pelo WhatsApp</button>
+        </a>
+    </div>
+</section>
+</main>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Fábio. Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="www.linkedin.com/in/fabiodemelof" target="_blank">
+                <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" class="footer-icon">
+            </a>
+            <a href="https://wa.me/31983471851" target="_blank">
+                <img src="whatsapp-128-svgrepo-com.svg" alt="WhatsApp" class="footer-icon">
+            </a>
+            <a href="mailto:fabiodemelo123s@outlook.com" target="_blank">
+                <img src="microsoftoutlook-svgrepo-com.svg" alt="Email" class="footer-icon">
+            </a>
+        </div>
+    </div>
+</footer>
+<script src="portfolio.js"></script>
+</body>
+</html>
